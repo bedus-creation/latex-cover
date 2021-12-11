@@ -1,0 +1,59 @@
+ \documentclass{book}
+ 
+ \usepackage[margin=0.5in]{geometry}
+ \usepackage[default]{comicneue}
+ \usepackage{background}
+ \usetikzlibrary{calc}
+ 
+ 
+ \SetBgScale{1}
+ \SetBgAngle{0}
+ \SetBgColor{black}
+ \SetBgContents{
+ 	\begin{tikzpicture}[overlay,remember picture]
+ 		\draw [line width=1pt,rounded corners=4pt,]
+ 		($ (current page.north west) + (2cm,-2cm) $)
+ 		rectangle
+ 		($ (current page.south east) + (-2cm,2cm) $);
+ \end{tikzpicture}}
+
+ \begin{document}
+ 	
+ 	\thispagestyle{empty}
+ 	\setcounter{page}{0}
+ 	
+ 	\mbox{}
+ 	
+ 	\vfill
+ \begin{center}
+ 	\large Notes on
+ 	
+ 	\LARGE\bfseries Algorithmic Complexity
+ 	
+ 	\bigskip\bigskip
+ 	
+ 	\rule[-3cm]{.4pt}{6cm}\quad
+ 	\rule[-4cm]{.4pt}{8cm}\quad
+ 	\rule[-3cm]{.4pt}{6cm}
+ 	
+ 	\bigskip\bigskip
+ 	
+ 	\large\mdseries Central Department of MscCSIT,
+ 	
+ 	Tu, Kirtipur
+ \end{center}
+ 
+ \vfill
+ 
+ \mbox{}
+ 
+ \clearpage
+ 
+ 
+ 
+ \newpage
+ \pagestyle{plain}
+ \SetBgContents{}
+ \chapter{Here I am}
+ 
+\end{document}
